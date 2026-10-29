@@ -62,3 +62,17 @@ The objective of this phase is to execute comprehensive 1D, 2D, 3D, and multi-di
    Calculated Euclidean distance matrices to map hierarchical aggregations. Generated and compared dendrograms utilizing Single, Complete, and Ward linkage methods. Cut the final hierarchy into 3 discrete clusters and tabulated sample assignments.
 
 ---
+
+## Phase 3: PCA, SLR & Classification
+
+The objective of this final phase is to apply dimensionality reduction and predictive modeling techniques to the dataset, satisfying the requirements.
+
+### Tasks Completed in Phase 3
+1. **Principal Component Analysis (PCA):** 
+   Standardized the primary numerical features (`rectal_temp`, `pulse`, `packed_cell_volume`) and applied PCA to reduce dimensionality. Extracted two principal components and visualized the dataset in a 2D scatter plot colored by clinical outcome to observe class separability.
+2. **Simple Linear Regression (SLR):** 
+   Implemented a predictive regression model utilizing `scikit-learn`. Split the dataset into 80/20 train-test sets and predicted `pulse` rates based on `rectal_temp`. Evaluated the model using Mean Squared Error (MSE) and R-squared metrics, and plotted the regression line against actual test data.
+3. **Classification Modeling:** 
+   Engineered a Logistic Regression classifier to predict the categorical `outcome` of the horses. Standardized the inputs, trained the model on an 80/20 split, and evaluated performance via accuracy scores and a detailed classification report. Visualized the model's predictive accuracy utilizing a Seaborn confusion matrix heatmap.
+
+---
